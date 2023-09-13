@@ -1,14 +1,6 @@
 import itertools
 
 
-# def open_ports():
-#     port = 1024
-#     while True:
-#         if is_open(port):
-#             yield port
-#         port += 1
-
-
 def five():
     while True:
         yield 5
