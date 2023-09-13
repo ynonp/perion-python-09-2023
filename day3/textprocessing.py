@@ -7,6 +7,10 @@ HELLO - but I'm ok
 Im a line that shouldn't be printed
 BUT I'm a line that should""")
 
+#  firstword
+#  |
+#  V
+# (BUT)       I'm a line that should
 pat = re.compile(r'(?P<firstword>^[A-Z]+)\b')
 
 for line in text:
