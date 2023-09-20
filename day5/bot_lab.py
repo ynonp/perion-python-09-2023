@@ -22,6 +22,10 @@ async def sleep(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text(f"Usage: /sleep <time>")
 
 
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text(f"Hello World")
+
+
 async def read(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     try:
         filename = update.message.text.split(' ')[1]
